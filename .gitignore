@@ -7,3 +7,7 @@ variable_attention_experiment/data/group2/9_2019_Nov_16/eye_data/9_7
 
 
 
+data/.DS_Store
+.gitignore
+data/sustained/.DS_Store
+*.DS_Store

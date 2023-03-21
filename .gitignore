@@ -1,4 +1,2 @@
-data/.DS_Store
-data/sustained/.DS_Store
+data
 *.DS_Store
-data/*/*/eye_data/*_*

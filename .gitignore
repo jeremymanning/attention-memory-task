@@ -1,2 +1,8 @@
 data
 *.DS_Store
+paper/*.aux
+paper/*.log
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.fls
+paper/*.out

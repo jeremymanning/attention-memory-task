@@ -6,3 +6,10 @@ paper/*.fdb_latexmk
 paper/*.synctex.gz
 paper/*.fls
 paper/*.out
+
+__pycache__/*
+*.pyc
+*.ipynb_checkpoints/*
+
+experiment/stimuli
+experiment/__MACOSX

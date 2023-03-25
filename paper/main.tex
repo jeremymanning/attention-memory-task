@@ -19,15 +19,9 @@
 \usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
 \linenumbers
 
-\newcommand{\familiarity}{S1}
-\newcommand{\fixation}{S2}
-\newcommand{\timecourseCuedCategory}{S3}
-\newcommand{\timecourseUncuedCategory}{S4}
-\newcommand{\timecourseCuedLocation}{S5}
-\newcommand{\timecourseUncuedLocation}{S6}
-\newcommand{\timecourseNovel}{S7}
-\newcommand{\timecourseDiff}{S8}
-
+\newcommand{\gazeLocations}{S1}
+\newcommand{\excludedTrials}{S2}
+\newcommand{\ratingsByCategory}{S3}
 
 \begin{document}
 
@@ -253,6 +247,13 @@ Copenhagen, Denmark). We calibrated the eyetracker using a 9-point gaze
 pattern. As described below, we re-calibrated the eyetracker at regular
 intervals throughout the experiment to protect against camera drift.
 
+We used the eyetracking data to home in specifically on behavioral effects
+related to \textit{covert} attention, as opposed to overt looking effects.
+Specifically, we excluded from further analysis any images from trials where
+participants shifted their gaze (for any non-zero amount of time) to any part
+of the attended composite image during a presentation trial
+(see Figs.~\gazeLocations,~and \excludedTrials).
+
 \subsection*{Experimental paradigm}
 
 Our experiment comprised two testing conditions: a \textit{sustained} attention
@@ -395,383 +396,498 @@ the experimenter. The experimenter then entered the testing room, re-ran the
 eyetracker calibration sequence, and exited the testing room prior to the next
 task block.
 
-\textbf{JRM STOPPED HERE}
-
 \section*{Results}
 
-We ran two volitional covert attention experiments; in the Sustained Attention
-Experiment we asked participants to \textit{sustain} the focus of their
-attention over a succession of 10 stimulus presentations per block whereas in
-the Variable Attention Experiment we asked participants to \textit{vary} their
-focus of attention with each new stimulus (also for a total of 10 stimulus
-presentations per block). Each stimulus comprised a pair of composite images
-(one on the left and one on the right side of the display), where each
-composite comprised an equal blend of a unique face and a unique place image.
-We followed the presentation phases of each experimental block with a memory
-phase, where participants performed a recognition memory task by rating the
-familiarity of previously experienced and novel face and place images (see
-\textit{Materials and methods}, Fig.~\ref{fig:paradigm}).
+We ran a volitional covert attention experiment with two conditions; in the
+sustained attention condition we asked participants to \textit{sustain} the
+focus of their attention over a succession of 10 stimulus presentations per
+block whereas in the variable attention condition we asked participants to
+\textit{vary} their focus of attention with each new stimulus (also for a total
+of 10 stimulus presentations per block). Each stimulus comprised a pair of
+composite images (one on the left and one on the right side of the display),
+where each composite comprised an equal blend of a unique face and a unique
+place image. We followed the presentation phases of each experimental block
+with a memory phase, where participants performed a recognition memory task by
+rating the familiarity of previously experienced and novel face and place
+images (see \textit{Experimental paradigm}, Fig.~\ref{fig:paradigm}).
 
-We considered each image we probed in the memory phase with respect to whether
-(and how) the participant had experienced and/or attended to that image during
-the presentation phase (Fig.~\ref{fig:familiarity}). For example, if a given
-face image had been presented as part of the composite image on the right of
-the screen following an \texttt{attend to the face on the right} instruction,
-then that face image would have been the focus of the participant's attention
-during one stimulus presentation. The face image on the left (unattended side)
-during that trial would have been captured by feature-based attention, but not
-by location-based attention; and the place image (unattended category) on the
-right during that trial would have been captured by location-based attention,
-but not by feature-based attention. The place image on the left during that
-trial remained outside of the focus of both feature-based and location-based
-attention. In this way, we categorized each of the images that participants
-experienced during the presentation phases of each experiment in terms of
-whether they fell under the scope of feature-based and/or location-based
-attention. We also categorized novel face and place images that we asked
-participants to judge during the memory phase (i.e., images that the
-participant hadn't seen before) as belonging to the attention-cued or uncued
-category. These novel images were intended to serve as a baseline for
-comparison. For example, we sought to measure how people rated the familiarity
-of new images in general. We also used differences in familiarity ratings
-between novel images of the attention-cued versus uncued categories to evaluate
-potential \textit{prospective} affects of modulating the focus of feature-based
-attention.
+We first wondered whether (and how) shifts in covert attention might affect
+participants' ratings during the recognition memory task
+(Fig.~\ref{fig:familiarity}). To ensure that our findings were not conflated
+with where people were physically looking, we excluded from further analysis
+any images presented during trials where the participant's gaze touched on any
+part of the attended composite image (see \textit{Eyetraciking},
+Figs.~\gazeLocations~and \excludedTrials). For the remaining trials, the
+participants kept their gaze focused on a fixation cross at the center of the
+screen while \textit{covertly} shifting the focus of their attention to the
+cued category component of the composite image on the cued location. In other
+words, during these remaining trials, participants' physical (external)
+experiences of the face and place components of every presented composite image
+remained relatively constant across trials (up to our ability to accurately
+measure where participants were looking using the eyetracker). 
+
+Simply by encoding their prior experiences into memory, we reasoned that
+participants should rate \textit{any} presented images as more familiar than
+novel images, regardless of whether they were following the attention cues. We
+confirmed that this prediction held in both the sustained ($t(29) = 8.856, p <
+0.001$) and variable ($t(22) = 5.144, p < 0.001$) conditions. In addition, to
+the extent that participants were following the attention cues, there
+\textit{internal} experiences of each image should depend on their internal
+focus of attention during each image presentation. For example, we expected
+that the attended-category component of the composite image at the attended
+location might be better recognized than the other composite image components.
+Indeed, participants in both experimental conditions rated these ``fully
+attended'' images as more familiar than category-matched image components from
+unattended locations (sustained: $t(29) = 6.893, p < 0.001$; variable: $t(22) =
+6.938, p < 0.001$), location-matched images from the unattended category
+(sustained: $t(29) = 6.710, p < 0.001$; variable: $t(22) = 7.633, p < 0.001$),
+unattended images that were neither from the attended category nor the attended
+location (sustained: $t(29) = 8.470, p < 0.001$; variable: $t(22) = 7.256, p <
+0.001$), or novel images they had never seen before (sustained: $t(29) =
+10.259, p < 0.001$; variable: $t(22) = 7.874, p < 0.001$). We also observed a
+``boost'' in familiarity over novel images for attended \textit{or} unattended
+images from the cued category (sustained: $t(29) = 10.578, p < 0.001$;
+variable: $t(22) = 7.354, p < 0.001$) and location (sustained: $t(29) = 8.917,
+p < 0.001$; variable: $t(22) = 5.726, p < 0.001$).
+
+We also wondered whether the ways participants attended to or remembered the
+images might depend on image-specific properties like the images' categories.
+We repeated the analyis displayed in Figure~\ref{fig:familiarity} separately
+for face and place images (Fig.~\ratingsByCategory). The same general patterns
+held for each category, as when we combined across the two stimulus categories
+as reported above. For example, fully attended face and place images were both
+rated as more familiar than the category-matched images from the unattended
+location (sustained: $t$s$(29) \geq 3.36, p$s$ \leq 0.002$; variable: $t$s$(22)
+\geq 6.205, p$s$ \leq 0.001$), attended-location images from the unattended
+category (sustained: $t$s$(29) \geq 5.886, p$s$ \leq 0.001$; variable:
+$t$s$(29) \geq 4.277, p$s$ \leq 0.001$), images from the unattended category
+and location (sustained: $t$s$(29) \geq 6.628, p$s$ \leq 0.001$; variable:
+$t$s$(29) \geq 5.624, p$s$ \leq 0.001$), and novel images (sustained: $t$s$(29)
+\geq 5.987, p$s$ \leq 0.001$; variable: $t$s$(29) \geq 5.132, p$s$ \leq
+0.001$). Taken together, the above results suggest that what we remember is
+guided in part by what we attended to, even after accounting for where we look
+or what specifically we are looking at.
+
+Splitting participants' responses to face versus place images also revealted
+that participants often rated attended (and partially attended) place images as
+more familiar than attention-matched face images (compare dark versus light
+bars in Fig.~\ratingsByCategory). We hypothesized that this might be
+explainable by some property of the relevant cognitive processes or by
+properties of the stimuli themselves. To help elucidate this distinction, we
+examined individual exemplars of the face and place images used in our paradigm
+(Fig.~\ref{fig:stimuli}A). By design, the face images had consistent head
+sizes, viewing angles, expressions, and so on. In contrast, the place images
+varied more substantially across images. For example, some place images
+depicted human-made structures; others depicted natural scenes; some depicted
+indoor views; others depicted outdoor views; etc. This can also be seen by
+averaging the pixel intensity values across images, separately for the face and
+place stimuli (Fig.~\ref{fig:stimuli}B). Whereas the average face image retains
+many of the landmarks characteristic of most faces (e.g., clearly defined hair,
+eyes, nose, mouth, head shape, etc.), the average place image does not show
+place-specific features as clearly, aside from a general tendancy for the tops
+of place images to be lighter than the bottoms of place images. We also
+computed the pairwise similarities across images from each stimulus category
+(Fig.~\ref{fig:stimuli}C) and found that face images tended to be much more
+similar to each other than place images (Fig.~\ref{fig:stimuli}D; $t(115258) =
+254.764, p < 0.001$). This analysis indicated to us that our experimental
+paradigm was not well-suited to identifying cognitively meaningful stimulus
+category differences, since participants' category-specific judgements may be
+confounded with within-category image similarity differences.
+
 
 \begin{figure*}[tp]
-  \centering
-  \includegraphics[width=0.75\textwidth]{figures/familiarity}
+	\centering
+	\includegraphics[width=\textwidth]{figs/stimuli}
+  
+  \caption{\textbf{Stimulus examples and properties.} \textbf{A. Example images
+  from each stimulus category.} Randomly chosen subsets of 20 face images
+  (left) and 20 place images (right) are displayed. \textbf{B. Across-image
+  averages.} Each panel displays the average image, taken across all 360 face
+  images (left) and 360 place images (right). \textbf{C. Pairwise
+  correlations.} Each row and column of the matrices displays the correlation
+  (across pixels) in intensity values for one pair of face images (left) or
+  place images (right). \textbf{D. Average pairwise correlations.} The bar
+  heights denote the average pairwise correlations between face and place
+  images. Error bars denote across-pair bootstrap-estimated 95\%
+  confidence intervals.}
+  
+  \label{fig:stimuli}
+  \end{figure*}
 
-  \caption{\textbf{Familiarity ratings for attended, unattended, and novel
-  stimuli.} Each split violin plot displays the distribution of
-  within-participant average familiarity ratings given to faces (left, darker
-  colors) and scenes (right, lighter colors) during the memory phases of each
-  experiment. As shown in the legend (bottom), the colors indicate whether each
-  image had been viewed during the presentation phase (\texttt{old}) or not;
-  whether the given images matched the \texttt{attended category}; and/or
-  whether the given images matched the \texttt{attended location}. The colored
-  lines above each set of violin plots denote statistical differences
-  (\textbf{pos}itive or \textbf{neg}ative differences in mean, collapsing over
-  image category, assessed via two-tailed $t$-tests) between the distributions
-  centered on the endpoints of each line. The line thicknesses denote
-  $p$-values as indicated in the legend. Asterisks denote differences between
-  the face versus scene distributions (assessed via two-tailed $t$-tests).
-  Panel \textbf{a.} displays results from the Sustained Attention Experiment
-  and panel \textbf{b.} displays results from the Variable Attention
-  Experiment. Figure~\familiarity~displays these results broken down by
-  participant cohort.}
+Next, we turned to identifying potential differences in participants' behaviors
+across the two experimental conditions. The main difference between the
+conditions' procedures was in how long participants were asked to maintain the
+same focus of category-based and location-based attention, across successive
+image presentations. Therefore, differences in participants' behaviors across
+the two conditions might reflect differences in the timescales of the relevant
+cognitive processes. We compared participants' familiarity ratings for images
+at each attention level across the two conditions. We saw no evidence that
+people rated fully attended images ($t(51) = -0.649, p = 0.519$),
+attended-category (but not location) images ($t(51) = 1.163, p = 0.250$),
+unattended category and location images ($t(51) = -1.600, p = 0.116$), or novel
+images ($t(51) = -0.435, p = 0.665$) differently across the two conditions.
+However, participants in the variable attention condition rated
+attended-location (but unattended category) images as more familiar than
+participants in the sustained attention condition ($t(51) = 2.174, p = 0.034$).
+This suggests that the timescales over which location-based versus
+category-based attention tend to operate may differ.
 
-\label{fig:familiarity}
-\end{figure*}
+\textbf{JRM STOPPED HERE}
 
-Participants in both experiments rated stimuli they attended as more familiar
-than unattended or novel stimuli (Fig.~\ref{fig:familiarity}; Sustained
-Attention Experiment: $t(59) = 13.42, p = 1.39 \times 10^{-19}, d = 1.73$;
-Variable Attention Experiment: $t(52) = 12.40, p = 3.70 \times 10^{-17}, d =
-1.70$). Participants in both experiments also rated attended scene stimuli as
-more familiar than attended face stimuli (Sustained Attention Experiment:
-$t(59) = 7.69, p = 1.85 \times 10^{-10}, d = 0.99$; Variable Attention
-Experiment: $t(52) = 7.08, p = 3.63 \times 10^{-9}, d = 0.97$). These findings
-indicate that aspects of experience that are captured by the focus of attention
-are easier to recognize later, and that attention may preferentially benefit
-memory for some aspects of experience to a greater extent than other aspects of
-experience.
+% We considered each image we probed in the memory phase with respect to whether
+% (and how) the participant had experienced and/or attended to that image during
+% the presentation phase (Fig.~\ref{fig:familiarity}). For example, if a given
+% face image had been presented as part of the composite image on the right of
+% the screen following an \texttt{attend to the face on the right} instruction,
+% then that face image would have been the focus of the participant's attention
+% during one stimulus presentation. The face image on the left (unattended side)
+% during that trial would have been captured by feature-based attention, but not
+% by location-based attention; and the place image (unattended category) on the
+% right during that trial would have been captured by location-based attention,
+% but not by feature-based attention. The place image on the left during that
+% trial remained outside of the focus of both feature-based and location-based
+% attention. In this way, we categorized each of the images that participants
+% experienced during the presentation phases of each experiment in terms of
+% whether they fell under the scope of feature-based and/or location-based
+% attention. We also categorized novel face and place images that we asked
+% participants to judge during the memory phase (i.e., images that the
+% participant hadn't seen before) as belonging to the attention-cued or uncued
+% category. These novel images were intended to serve as a baseline for
+% comparison. For example, we sought to measure how people rated the familiarity
+% of new images in general. We also used differences in familiarity ratings
+% between novel images of the attention-cued versus uncued categories to evaluate
+% potential \textit{prospective} affects of modulating the focus of feature-based
+% attention.
 
-Participants in the Sustained Attention Experiment experiment also rated
-unattended images that matched the attended category as more familiar than
-unattended images that did not match the attended category (\textit{incidental
-feature-based attention}; $t(59) = 7.17, p = 1.40 \times 10^{-9}, d = 0.93$).
-This pattern did not hold for participants in the Variable Attention Experiment
-($t(52) = 0.44, p = 0.66, d = 0.06$). Participants in both experiments
-displayed an incidental effect of location-based attention, whereby they rated
-unattended-category images at the attended location as more familiar than
-unattended-category images at the unattended location (Sustained Attention
-Experiment: $t(59) = 4.32, p = 6.05 \times 10^{-5}, d = 0.56$; Variable
-Attention Experiment: $t(52) = 2.57, p = 0.01, d = 0.35$). This indicates that
-aspects of our experience that incidentally overlap with the focus of our
-location-based attention are easier to recognize later, even if those aspects
-do not fall within the intentional focus of our feature-based attention.
+% \begin{figure*}[tp]
+%   \centering
+%   \includegraphics[width=0.75\textwidth]{figs/familiarity_by_attention_level}
 
-We defined the \textit{memory benefit of feature-based attention} as the
-difference in mean familiarity ratings of attended stimuli and unattended
-stimuli from the attended category versus the mean familiarity ratings of
-unattended stimuli from the unattended category. Similarly, we defined the
-\textit{memory benefit of location-based attention} as the difference in mean
-familiarity ratings of attended stimuli and unattended stimuli from the
-attended location versus the mean familiarity ratings of unattended stimuli
-from the unattended location. Participants in the Sustained Attention
-Experiment displayed a larger memory benefit of feature-based attention than
-location-based attention ($t(59) = 3.25, p = 1.91 \times 10^{-3}, d = 0.42$),
-whereas participants in the Variable Attention Experiment displayed a larger
-memory benefit of location-based attention ($t(52) = 1.70, p = 9.99 \times
-10^{-2}, d = 0.23$). This appeared to be driven in part by a response bias
-towards attended-category images. For example, relative to the most recent
-attention cue, participants in the Sustained Attention Experiment rated
-attended-category novel images as more familiar than unattended-category novel
-images ($t(59) = 7.04, p = 2.35 \times 10^{-9}, d = 0.91$), whereas
-participants in the Variable Attention Experiment responded similarly to
-attended-category and unattended-category novel images ($t(52) = 0.23, p =
-0.82, d = 0.03$). The size of this attended-category response bias for novel
-images was reliably smaller than the memory benefits of feature-based attention
-in both experiments (Sustained Attention Experiment: $t(59) = 7.59, p = 2.68
-\times 10^{-10}, d = 0.98$; Variable Attention Experiment: $t(52) = 6.74, p =
-1.31 \times 10^{-8}, d = 0.93$). This indicates that tuning the focus of
-feature-based attention with respect to how ongoing experience is encoded in
-memory takes longer than the duration of a single stimulus presentation
-(including fixation, roughly 5.5~s). Further, once feature-based attention
-comes ``online,'' it affects how \textit{new} stimuli are processed.
+%   \caption{\textbf{Familiarity ratings for attended, unattended, and novel
+%   stimuli.} The bars display the average familiarity ratings participants gave
+%   to images from the same category and location as the attention cue (full
+%   attention), the same category (but opposite location) as the attention cue
+%   (attended category), the same location (but opposite category) as the
+%   attention cue (attended location), the opposite category and location as the
+%   attention cue (unattended), or novel images. The left panel displays
+%   familiarity ratings from the sustained attention condition and the right
+%   panel displays familiarity ratings from the variable attention condition. All
+%   error bars denote across-participant bootstrap-estimated 95\% confidence
+%   intervals. See Figure~\ratingsByCategory~for analogous results broken down by
+%   stimulus category.}
 
-We also compared the relative sizes of the memory benefits of feature-based
-attention and location-based attention across the two experiments. Participants
-in the Sustained Attention Experiment displayed a larger difference between
-these two effects than did participants in the Variable Attention Experiment
-($t(111) = 3.48, p = 7.24 \times 10^{-4}, d = 0.66$). Further, the difference
-in mean familiarity ratings of attended-location images versus unattended
-images was greater for participants in the Variable Attention Experiment
-($t(111) = 2.32, p = 0.02, d = 0.44$). The memory benefit of location-based
-attention reliably distinguished between attended-category versus unattended
-category images for participants in both experiments (Sustained Attention
-Experiment: $t(59) = 9.50, p = 1.68 \times 10^{-13}, d = 1.23$; Variable
-Attention Experiment: $t(52) = 9.72, p = 2.76 \times 10^{-13}, d = 1.33$). This
-indicates that tuning the focus of location-based attention with respect to how
-ongoing experience is encoded into memory occurs faster than the duration of a
-single stimulus presentation.
+% \label{fig:familiarity}
+% \end{figure*}
 
-We also compared reaction times to probes from the attended versus unattended
-side. Participants in both experiments responded slightly faster on average to
-attended-side probes, although the differences did not reach significance
-(Sustained Attention Experiment: $t(59) = 1.03, p = 0.31, d = 0.13$; Variable
-Attention Experiment: $t(52) = 0.65, p = 0.52, d = 0.09$). Participants in the
-Sustained Attention Experiment displayed a slightly larger (and not
-statistically significant) difference in attended-side versus unattended-side
-reaction times than participants in the Variable Attention Experiment ($t(111)
-= .87, p = 0.38, d = 0.20$). Because none of these reaction time effects were
-statistically reliable, we are unable to draw meaningful conclusions about
-reaction times to the attention probes on the attended versus unattended side,
-nor are we able to draw meaningful conclusions about differences in those
-reaction times that might be due to sustained versus variable attention.
+% Participants in both experiments rated stimuli they attended as more familiar
+% than unattended or novel stimuli (Fig.~\ref{fig:familiarity}; Sustained
+% Attention Experiment: $t(59) = 13.42, p = 1.39 \times 10^{-19}, d = 1.73$;
+% Variable Attention Experiment: $t(52) = 12.40, p = 3.70 \times 10^{-17}, d =
+% 1.70$). Participants in both experiments also rated attended scene stimuli as
+% more familiar than attended face stimuli (Sustained Attention Experiment:
+% $t(59) = 7.69, p = 1.85 \times 10^{-10}, d = 0.99$; Variable Attention
+% Experiment: $t(52) = 7.08, p = 3.63 \times 10^{-9}, d = 0.97$). These findings
+% indicate that aspects of experience that are captured by the focus of attention
+% are easier to recognize later, and that attention may preferentially benefit
+% memory for some aspects of experience to a greater extent than other aspects of
+% experience.
 
+% Participants in the Sustained Attention Experiment experiment also rated
+% unattended images that matched the attended category as more familiar than
+% unattended images that did not match the attended category (\textit{incidental
+% feature-based attention}; $t(59) = 7.17, p = 1.40 \times 10^{-9}, d = 0.93$).
+% This pattern did not hold for participants in the Variable Attention Experiment
+% ($t(52) = 0.44, p = 0.66, d = 0.06$). Participants in both experiments
+% displayed an incidental effect of location-based attention, whereby they rated
+% unattended-category images at the attended location as more familiar than
+% unattended-category images at the unattended location (Sustained Attention
+% Experiment: $t(59) = 4.32, p = 6.05 \times 10^{-5}, d = 0.56$; Variable
+% Attention Experiment: $t(52) = 2.57, p = 0.01, d = 0.35$). This indicates that
+% aspects of our experience that incidentally overlap with the focus of our
+% location-based attention are easier to recognize later, even if those aspects
+% do not fall within the intentional focus of our feature-based attention.
 
-\begin{figure}[tp]
-  \centering
-  \includegraphics[width=\textwidth]{figures/exps1_2_xgaze.pdf}
+% We defined the \textit{memory benefit of feature-based attention} as the
+% difference in mean familiarity ratings of attended stimuli and unattended
+% stimuli from the attended category versus the mean familiarity ratings of
+% unattended stimuli from the unattended category. Similarly, we defined the
+% \textit{memory benefit of location-based attention} as the difference in mean
+% familiarity ratings of attended stimuli and unattended stimuli from the
+% attended location versus the mean familiarity ratings of unattended stimuli
+% from the unattended location. Participants in the Sustained Attention
+% Experiment displayed a larger memory benefit of feature-based attention than
+% location-based attention ($t(59) = 3.25, p = 1.91 \times 10^{-3}, d = 0.42$),
+% whereas participants in the Variable Attention Experiment displayed a larger
+% memory benefit of location-based attention ($t(52) = 1.70, p = 9.99 \times
+% 10^{-2}, d = 0.23$). This appeared to be driven in part by a response bias
+% towards attended-category images. For example, relative to the most recent
+% attention cue, participants in the Sustained Attention Experiment rated
+% attended-category novel images as more familiar than unattended-category novel
+% images ($t(59) = 7.04, p = 2.35 \times 10^{-9}, d = 0.91$), whereas
+% participants in the Variable Attention Experiment responded similarly to
+% attended-category and unattended-category novel images ($t(52) = 0.23, p =
+% 0.82, d = 0.03$). The size of this attended-category response bias for novel
+% images was reliably smaller than the memory benefits of feature-based attention
+% in both experiments (Sustained Attention Experiment: $t(59) = 7.59, p = 2.68
+% \times 10^{-10}, d = 0.98$; Variable Attention Experiment: $t(52) = 6.74, p =
+% 1.31 \times 10^{-8}, d = 0.93$). This indicates that tuning the focus of
+% feature-based attention with respect to how ongoing experience is encoded in
+% memory takes longer than the duration of a single stimulus presentation
+% (including fixation, roughly 5.5~s). Further, once feature-based attention
+% comes ``online,'' it affects how \textit{new} stimuli are processed.
 
-  \caption{\textbf{Horizontal coordinates of visual fixations.} Each violin
-  plot displays a distribution of participant-wise average horizontal gaze
-  positions relative to a presented image. The coordinates have been normalized
-  such that a value of 1.0 denotes the furthest onscreen coordinate from the
-  central fixation point \textit{towards} the direction of the given image, and
-  -1.0 denotes the furthest onscreen coordinate from the central fixation point
-  \textit{away from} the direction of the given image. The gray bars in each
-  panel mark the boundaries of the presented images. The violin plots are
-  broken down by participants' familiarity ratings during the memory phases of
-  each experiment, and by each image's relation to the attention cue while that
-  image appeared onscreen. Panel \textbf{a.} displays fixation data for the
-  Sustained Attention Experiment and Panel \textbf{b.} displays fixation data
-  for the Variable Attention Experiment. Figure~\fixation~displays these
-  results broken down by participant cohort.}
+% We also compared the relative sizes of the memory benefits of feature-based
+% attention and location-based attention across the two experiments. Participants
+% in the Sustained Attention Experiment displayed a larger difference between
+% these two effects than did participants in the Variable Attention Experiment
+% ($t(111) = 3.48, p = 7.24 \times 10^{-4}, d = 0.66$). Further, the difference
+% in mean familiarity ratings of attended-location images versus unattended
+% images was greater for participants in the Variable Attention Experiment
+% ($t(111) = 2.32, p = 0.02, d = 0.44$). The memory benefit of location-based
+% attention reliably distinguished between attended-category versus unattended
+% category images for participants in both experiments (Sustained Attention
+% Experiment: $t(59) = 9.50, p = 1.68 \times 10^{-13}, d = 1.23$; Variable
+% Attention Experiment: $t(52) = 9.72, p = 2.76 \times 10^{-13}, d = 1.33$). This
+% indicates that tuning the focus of location-based attention with respect to how
+% ongoing experience is encoded into memory occurs faster than the duration of a
+% single stimulus presentation.
 
-\label{fig:fixation}
-\end{figure}
-
-
-Given that participants in both experiments rated attended-location images from
-both the attended and unattended category as more familiar than
-unattended-location images, we wondered whether this was truly a consequence of
-covert attention, or whether it might be driven solely by where participants
-were looking. In other words, we sought to distinguish the memory effects of
-the focus of covert attention from the focus of visual gaze. We used
-eyetracking to measure the horizontal positions of the participants' visual
-fixations while each pair of composite stimuli appeared onscreen
-(Fig.~\ref{fig:fixation}). For 94\% of presentation trials (Sustained Attention
-Task: $\frac{4531}{4800}$ trials; Variable Attention Task: $\frac{3972}{4240}$
-trials), we collected viable gaze data for analysis. In the remaining trials,
-participant movement or other technical issues corrupted the gaze data. We
-found that, though they generally followed our instruction to keep their gaze
-fixed on the center of the screen, participants in both experiments exhibited a
-slight tendency to look towards the side of the screen they were attending to
-(Sustained Attention Task: $t(59) = 3.61, p = 6.31 \times 10^{-4}$; Variable
-Attention Task: $t(52) = 2.86, p = 6.06 \times 10^{-3}$). When we limited our
-analyses to trials with viable gaze data where participants successfully
-maintained fixation on the center of the screen within 4.28$^\circ$ visual
-angle (i.e., between the rightmost boundary of the left image and the leftmost
-boundary of the right image) we observed (numerical) memory benefits of
-feature-based attention in both experiments (Sustained Attention Experiment:
-$t(59) = 4.73, p = 1.96 \times 10^{-5}, d = 0.67$; Variable Attention
-Experiment: $t(52) = 0.64, p = 0.52, d = 0.09$) and location-based attention in
-the Sustained Attention Experiment, but not the Variable Attention Experiment
-(Sustained Attention Experiment: $t(59) = 0.67, p = 0.51, d = 0.09$; Variable
-Attention Experiment: $t(52) = -0.79, p = 0.43, d = 0.11$). These analyses
-indicate that although the focus of covert attention can affect where people
-are looking, covert attention affects memory encoding beyond what may be
-accounted for by gaze position alone.
-
-
-The preceding results indicate that volitional covert attention affects memory,
-and that feature-based and location-based covert attention may come online at
-different timescales. We next sought to examine how long the memory effects of
-feature-based and location-based covert attention persist. To gain additional
-insights into the timecourse of the impact of feature-based and location-based
-attention on memory, we used a sliding window analysis to measure how
-participants' familiarity ratings of attended, partially attended, unattended,
-and novel stimuli varied over the duration of the memory phases of both
-experiments. During each block within the memory phases of each experiment,
-participants made familiarity judgements about a total of 40 images (20 old
-images and 20 novel images). We computed average familiarity ratings for images
-appearing in each position of the memory stimulus sequence (positions 1--40),
-as a function of how (or whether) they were attended during the preceding
-presentation phase (old images) or whether they matched the category of the
-most recent attention cue (novel images), for overlapping 20-image sliding
-windows (Figs.~\ref{fig:familiarity_timecourse_category},
-\ref{fig:familiarity_timecourse_location}, and
-\ref{fig:familiarity_timecourse_novel}). We first calculated these values for
-each participant, and then we averaged across participants.
-
-\begin{figure*}[tp]
-  \centering
-  \includegraphics[width=1\textwidth]{figures/Cat_Cued_TimeSeries.pdf}
-
-  \caption{\textbf{Familiarity ratings over time for images that matched the
-  cued or uncued image category.} Each curve reflects the average familiarity
-  ratings for attended, unattended, and novel images (denoted in the legends on
-  the right) within a succession of overlapping 20-image sliding windows. Error
-  ribbons denote 95\% confidence intervals, computed across participants.
-  Panels \textbf{a.} and \textbf{c.} display results from the Sustained
-  Attention Experiment and Panels \textbf{b.} and \textbf{d.} display results
-  from the Variable Attention Experiment. The paired horizontal lines at the
-  bottom of each panel denote timepoints when the given pair of curves was
-  statistically distinguishable (i.e., the topmost line color was statistically
-  greater than the bottommost line color at $\alpha = 0.05$, via a paired
-  two-tailed $t$-test.) The gray lines in Panels b and d reflect familiarity
-  ratings of novel stimuli from both the most recently attended and unattended
-  image categories. Figures~\timecourseCuedCategory~and
-  \timecourseUncuedCategory~display these results broken down by participant
-  cohort.}
-
-\label{fig:familiarity_timecourse_category}
-\end{figure*}
-
-Throughout the memory phase, participants from both experiments rated attended
-images as more familiar than category-matched unattended and novel images
-(Fig.~\ref{fig:familiarity_timecourse_category}, top row). This indicates that
-the memory benefits of attending to specific stimulus features (versus
-category-general features) persist for at least as long as the duration of the
-memory phase (2~min). Early in the memory phase, participants in the Variable
-Attention Experiment also rated category-matched unattended images as more
-familiar than novel images. This pattern did not hold for participants in the
-Sustained Attention Experiment. The short-lived boost in familiarity for
-attended-category images at the unattended location following variable (but not
-sustained) attention suggests that the timecourse of feature-based attention's
-impact on memory depends on how long the focus of feature-based attention has
-been held.
-
-Participants in both experiments also rated unattended-category images at the
-attended location as more familiar than unattended-category images at the
-unattended location and novel unattended-category images
-(Fig.~\ref{fig:familiarity_timecourse_category}, bottom row). This pattern
-persisted throughout the memory phases of both experiments. This supports the
-notion that location-based attention enhances memory in a (partially)
-feature-independent way. Participants in the Variable Attention Experiment also
-rated unattended-category images at the unattended location as (numerically)
-more familiar than novel images (though this pattern was only statistically
-reliable towards the middle of the memory phase). This pattern did not hold for
-participants in the Sustained Attention Experiment. Participants in the
-Sustained Attention Experiment rated unattended-category images (regardless of
-location or novelty status) as less familiar than participants in the Variable
-Attention Experiment (e.g., compare heights of the lines in the bottom left
-versus bottom right panels of Fig.~\ref{fig:familiarity_timecourse_category}).
-This suggests that, after sustained feature-based attention to a particular
-image category, the encodings of stimuli from the unattended category are
-suppressed. This suppression effect appears to persist at least as long as the
-memory phase of the experiment (2~min). Further, the magnitude of this
-suppression effect appears to become stronger following longer-term sustained
-(versus shorter-term variable) feature-based attention.
-
-\begin{figure*}[tp]
-  \centering
-  \includegraphics[width=\textwidth]{figures/Side_Cued_TimeSeries_2.pdf}
-
-  \caption{\textbf{Familiarity ratings over time for images that matched the
-  cued or uncued image location.} This figure follows the same format and
-  conventions as Figure~\ref{fig:familiarity_timecourse_category}.
-  Figures~\timecourseCuedLocation~and \timecourseUncuedLocation~display these
-  results broken down by participant cohort.}
-
-\label{fig:familiarity_timecourse_location}
-\end{figure*}
-
-We next examined how participants' familiarity ratings varied over the duration
-of the memory phases of each experiment as a function of the attended location.
-Participants in the Sustained Attention Experiment rated attended-category
-images as more familiar, at both the attended and unattended locations
-(Fig.~\ref{fig:familiarity_timecourse_location}, left panels). In contrast,
-participants in the Variable Attention Experiment rated attended-category
-images as more familiar than unattended-category images only at the attended
-locations (Fig.~\ref{fig:familiarity_timecourse_location}, right panels). The
-primary difference in familiarity ratings between Sustained Attention
-Experiment versus Variable Attention Experiment participants was in how they
-rated unattended-category images. Participants in the Variable Attention Task
-rated unattended-category images as more familiar than did participants in the
-Sustained Attention Task; this pattern persisted throughout the memory phase
-and held for images at both the attended and unattended locations (compare
-heights of blue lines in the left versus right panels of
-Fig.~\ref{fig:familiarity_timecourse_location}). This suggests that lower
-familiarity ratings of unattended-category stimuli in the Sustained Attention
-Experiment are due to suppression of the encoding of unattended-category
-features (e.g., as opposed to enhancement of the encoding of attended-category
-features). This suppression effect appears to build over an interval that is
-longer than the duration of a single stimulus presentation (5.5~s).
-
-\begin{figure*}[tp]
-  \centering
-  \includegraphics[width=1\textwidth]{figures/Novel_Timecourse_Panels.pdf}
-
-  \caption{\textbf{Familiarity ratings over time for attended-category and
-  unattended-category novel images.} The top panels of this figure follow the
-  same formats and conventions as
-  Figures~\ref{fig:familiarity_timecourse_category} and
-  \ref{fig:familiarity_timecourse_location}. The bottom panels display the
-  differences between the timecourses of familiarity ratings of
-  attended-category and unattended-category novel stimuli. The error ribbons
-  denote 95\% confidence intervals, computed across participants. The dotted
-  horizontal line in each panel denotes a difference of 0-- i.e., the value
-  above which attended-category novel images were rated as more familiar than
-  unattended-category novel images. The black lines in the bottom panels
-  display linear regression fits to the data (error ribbons denote 95\%
-  confidence intervals). Figures~\timecourseNovel~and \timecourseDiff~display
-  these results broken down by participant cohort.}
-
-\label{fig:familiarity_timecourse_novel}
-\end{figure*}
+% We also compared reaction times to probes from the attended versus unattended
+% side. Participants in both experiments responded slightly faster on average to
+% attended-side probes, although the differences did not reach significance
+% (Sustained Attention Experiment: $t(59) = 1.03, p = 0.31, d = 0.13$; Variable
+% Attention Experiment: $t(52) = 0.65, p = 0.52, d = 0.09$). Participants in the
+% Sustained Attention Experiment displayed a slightly larger (and not
+% statistically significant) difference in attended-side versus unattended-side
+% reaction times than participants in the Variable Attention Experiment ($t(111)
+% = .87, p = 0.38, d = 0.20$). Because none of these reaction time effects were
+% statistically reliable, we are unable to draw meaningful conclusions about
+% reaction times to the attention probes on the attended versus unattended side,
+% nor are we able to draw meaningful conclusions about differences in those
+% reaction times that might be due to sustained versus variable attention.
 
 
-Finally, we examined how participants in both experiments rated the familiarity
-of novel images. These ratings provide insights into how modulating the focus
-of attention to \textit{prior} stimuli can affect the perception of
-\textit{future} stimuli. We considered how participants rated novel stimuli
-that matched versus did not match the category (face or scene) of the most
-recent attention cue. Participants in the Sustained Attention Experiment rated
-attended-category novel stimuli as more familiar than unattended-category novel
-stimuli throughout the entire memory phase
-(Fig.~\ref{fig:familiarity_timecourse_novel}a). By contrast, participants in
-the Variable Attention Experiment rated attended-category and
-unattended-category novel images similarly throughout the memory phase
-(Fig.~\ref{fig:familiarity_timecourse_novel}b). The difference in familiarity
-ratings between the two experiments primarily reflects that participants in the
-Variable Attention Experiment rated unattended-category novel images as more
-familiar than did participants in the Sustained Attention Experiment (e.g.,
-compare blue lines in Fig.~\ref{fig:familiarity_timecourse_novel}a versus
-\ref{fig:familiarity_timecourse_novel}b). This may indicate that the processing
-of unattended-category novel stimuli is suppressed following sustained
-attention (e.g., as opposed to enhancing the processing of attended-category
-novel stimuli). The differences in familiarity between attended-category versus
-unattended-category novel images increased slightly but reliably throughout the
-memory phases of both experiments (Fig.~\ref{fig:familiarity_timecourse_novel},
-bottom panels; slope of regression line fit to differences in Sustained
-Attention Experiment: $\beta = 2.05 \times 10^{-3}, p = 1.07 \times 10^{-14} $;
-slope of regression for Variable Attention Experiment: $\beta = 1.54 \times
-10^{-3}, p = 5.63 \times 10^{-13} $). This might reflect a process whereby the
-suppression of unattended features continues to build for a short duration even
-after the participant stops volitionally focusing on the attended features.
+% \begin{figure}[tp]
+%   \centering
+%   \includegraphics[width=\textwidth]{figures/exps1_2_xgaze.pdf}
+
+%   \caption{\textbf{Horizontal coordinates of visual fixations.} Each violin
+%   plot displays a distribution of participant-wise average horizontal gaze
+%   positions relative to a presented image. The coordinates have been normalized
+%   such that a value of 1.0 denotes the furthest onscreen coordinate from the
+%   central fixation point \textit{towards} the direction of the given image, and
+%   -1.0 denotes the furthest onscreen coordinate from the central fixation point
+%   \textit{away from} the direction of the given image. The gray bars in each
+%   panel mark the boundaries of the presented images. The violin plots are
+%   broken down by participants' familiarity ratings during the memory phases of
+%   each experiment, and by each image's relation to the attention cue while that
+%   image appeared onscreen. Panel \textbf{a.} displays fixation data for the
+%   Sustained Attention Experiment and Panel \textbf{b.} displays fixation data
+%   for the Variable Attention Experiment. Figure~\fixation~displays these
+%   results broken down by participant cohort.}
+
+% \label{fig:fixation}
+% \end{figure}
+
+
+% Given that participants in both experiments rated attended-location images from
+% both the attended and unattended category as more familiar than
+% unattended-location images, we wondered whether this was truly a consequence of
+% covert attention, or whether it might be driven solely by where participants
+% were looking. In other words, we sought to distinguish the memory effects of
+% the focus of covert attention from the focus of visual gaze. We used
+% eyetracking to measure the horizontal positions of the participants' visual
+% fixations while each pair of composite stimuli appeared onscreen
+% (Fig.~\ref{fig:fixation}). For 94\% of presentation trials (Sustained Attention
+% Task: $\frac{4531}{4800}$ trials; Variable Attention Task: $\frac{3972}{4240}$
+% trials), we collected viable gaze data for analysis. In the remaining trials,
+% participant movement or other technical issues corrupted the gaze data. We
+% found that, though they generally followed our instruction to keep their gaze
+% fixed on the center of the screen, participants in both experiments exhibited a
+% slight tendency to look towards the side of the screen they were attending to
+% (Sustained Attention Task: $t(59) = 3.61, p = 6.31 \times 10^{-4}$; Variable
+% Attention Task: $t(52) = 2.86, p = 6.06 \times 10^{-3}$). When we limited our
+% analyses to trials with viable gaze data where participants successfully
+% maintained fixation on the center of the screen within 4.28$^\circ$ visual
+% angle (i.e., between the rightmost boundary of the left image and the leftmost
+% boundary of the right image) we observed (numerical) memory benefits of
+% feature-based attention in both experiments (Sustained Attention Experiment:
+% $t(59) = 4.73, p = 1.96 \times 10^{-5}, d = 0.67$; Variable Attention
+% Experiment: $t(52) = 0.64, p = 0.52, d = 0.09$) and location-based attention in
+% the Sustained Attention Experiment, but not the Variable Attention Experiment
+% (Sustained Attention Experiment: $t(59) = 0.67, p = 0.51, d = 0.09$; Variable
+% Attention Experiment: $t(52) = -0.79, p = 0.43, d = 0.11$). These analyses
+% indicate that although the focus of covert attention can affect where people
+% are looking, covert attention affects memory encoding beyond what may be
+% accounted for by gaze position alone.
+
+
+% The preceding results indicate that volitional covert attention affects memory,
+% and that feature-based and location-based covert attention may come online at
+% different timescales. We next sought to examine how long the memory effects of
+% feature-based and location-based covert attention persist. To gain additional
+% insights into the timecourse of the impact of feature-based and location-based
+% attention on memory, we used a sliding window analysis to measure how
+% participants' familiarity ratings of attended, partially attended, unattended,
+% and novel stimuli varied over the duration of the memory phases of both
+% experiments. During each block within the memory phases of each experiment,
+% participants made familiarity judgements about a total of 40 images (20 old
+% images and 20 novel images). We computed average familiarity ratings for images
+% appearing in each position of the memory stimulus sequence (positions 1--40),
+% as a function of how (or whether) they were attended during the preceding
+% presentation phase (old images) or whether they matched the category of the
+% most recent attention cue (novel images), for overlapping 20-image sliding
+% windows (Figs.~\ref{fig:familiarity_timecourse_category},
+% \ref{fig:familiarity_timecourse_location}, and
+% \ref{fig:familiarity_timecourse_novel}). We first calculated these values for
+% each participant, and then we averaged across participants.
+
+% \begin{figure*}[tp]
+%   \centering
+%   \includegraphics[width=1\textwidth]{figures/Cat_Cued_TimeSeries.pdf}
+
+%   \caption{\textbf{Familiarity ratings over time for images that matched the
+%   cued or uncued image category.} Each curve reflects the average familiarity
+%   ratings for attended, unattended, and novel images (denoted in the legends on
+%   the right) within a succession of overlapping 20-image sliding windows. Error
+%   ribbons denote 95\% confidence intervals, computed across participants.
+%   Panels \textbf{a.} and \textbf{c.} display results from the Sustained
+%   Attention Experiment and Panels \textbf{b.} and \textbf{d.} display results
+%   from the Variable Attention Experiment. The paired horizontal lines at the
+%   bottom of each panel denote timepoints when the given pair of curves was
+%   statistically distinguishable (i.e., the topmost line color was statistically
+%   greater than the bottommost line color at $\alpha = 0.05$, via a paired
+%   two-tailed $t$-test.) The gray lines in Panels b and d reflect familiarity
+%   ratings of novel stimuli from both the most recently attended and unattended
+%   image categories. Figures~\timecourseCuedCategory~and
+%   \timecourseUncuedCategory~display these results broken down by participant
+%   cohort.}
+
+% \label{fig:familiarity_timecourse_category}
+% \end{figure*}
+
+% Throughout the memory phase, participants from both experiments rated attended
+% images as more familiar than category-matched unattended and novel images
+% (Fig.~\ref{fig:familiarity_timecourse_category}, top row). This indicates that
+% the memory benefits of attending to specific stimulus features (versus
+% category-general features) persist for at least as long as the duration of the
+% memory phase (2~min). Early in the memory phase, participants in the Variable
+% Attention Experiment also rated category-matched unattended images as more
+% familiar than novel images. This pattern did not hold for participants in the
+% Sustained Attention Experiment. The short-lived boost in familiarity for
+% attended-category images at the unattended location following variable (but not
+% sustained) attention suggests that the timecourse of feature-based attention's
+% impact on memory depends on how long the focus of feature-based attention has
+% been held.
+
+% Participants in both experiments also rated unattended-category images at the
+% attended location as more familiar than unattended-category images at the
+% unattended location and novel unattended-category images
+% (Fig.~\ref{fig:familiarity_timecourse_category}, bottom row). This pattern
+% persisted throughout the memory phases of both experiments. This supports the
+% notion that location-based attention enhances memory in a (partially)
+% feature-independent way. Participants in the Variable Attention Experiment also
+% rated unattended-category images at the unattended location as (numerically)
+% more familiar than novel images (though this pattern was only statistically
+% reliable towards the middle of the memory phase). This pattern did not hold for
+% participants in the Sustained Attention Experiment. Participants in the
+% Sustained Attention Experiment rated unattended-category images (regardless of
+% location or novelty status) as less familiar than participants in the Variable
+% Attention Experiment (e.g., compare heights of the lines in the bottom left
+% versus bottom right panels of Fig.~\ref{fig:familiarity_timecourse_category}).
+% This suggests that, after sustained feature-based attention to a particular
+% image category, the encodings of stimuli from the unattended category are
+% suppressed. This suppression effect appears to persist at least as long as the
+% memory phase of the experiment (2~min). Further, the magnitude of this
+% suppression effect appears to become stronger following longer-term sustained
+% (versus shorter-term variable) feature-based attention.
+
+% \begin{figure*}[tp]
+%   \centering
+%   \includegraphics[width=\textwidth]{figures/Side_Cued_TimeSeries_2.pdf}
+
+%   \caption{\textbf{Familiarity ratings over time for images that matched the
+%   cued or uncued image location.} This figure follows the same format and
+%   conventions as Figure~\ref{fig:familiarity_timecourse_category}.
+%   Figures~\timecourseCuedLocation~and \timecourseUncuedLocation~display these
+%   results broken down by participant cohort.}
+
+% \label{fig:familiarity_timecourse_location}
+% \end{figure*}
+
+% We next examined how participants' familiarity ratings varied over the duration
+% of the memory phases of each experiment as a function of the attended location.
+% Participants in the Sustained Attention Experiment rated attended-category
+% images as more familiar, at both the attended and unattended locations
+% (Fig.~\ref{fig:familiarity_timecourse_location}, left panels). In contrast,
+% participants in the Variable Attention Experiment rated attended-category
+% images as more familiar than unattended-category images only at the attended
+% locations (Fig.~\ref{fig:familiarity_timecourse_location}, right panels). The
+% primary difference in familiarity ratings between Sustained Attention
+% Experiment versus Variable Attention Experiment participants was in how they
+% rated unattended-category images. Participants in the Variable Attention Task
+% rated unattended-category images as more familiar than did participants in the
+% Sustained Attention Task; this pattern persisted throughout the memory phase
+% and held for images at both the attended and unattended locations (compare
+% heights of blue lines in the left versus right panels of
+% Fig.~\ref{fig:familiarity_timecourse_location}). This suggests that lower
+% familiarity ratings of unattended-category stimuli in the Sustained Attention
+% Experiment are due to suppression of the encoding of unattended-category
+% features (e.g., as opposed to enhancement of the encoding of attended-category
+% features). This suppression effect appears to build over an interval that is
+% longer than the duration of a single stimulus presentation (5.5~s).
+
+% \begin{figure*}[tp]
+%   \centering
+%   \includegraphics[width=1\textwidth]{figures/Novel_Timecourse_Panels.pdf}
+
+%   \caption{\textbf{Familiarity ratings over time for attended-category and
+%   unattended-category novel images.} The top panels of this figure follow the
+%   same formats and conventions as
+%   Figures~\ref{fig:familiarity_timecourse_category} and
+%   \ref{fig:familiarity_timecourse_location}. The bottom panels display the
+%   differences between the timecourses of familiarity ratings of
+%   attended-category and unattended-category novel stimuli. The error ribbons
+%   denote 95\% confidence intervals, computed across participants. The dotted
+%   horizontal line in each panel denotes a difference of 0-- i.e., the value
+%   above which attended-category novel images were rated as more familiar than
+%   unattended-category novel images. The black lines in the bottom panels
+%   display linear regression fits to the data (error ribbons denote 95\%
+%   confidence intervals). Figures~\timecourseNovel~and \timecourseDiff~display
+%   these results broken down by participant cohort.}
+
+% \label{fig:familiarity_timecourse_novel}
+% \end{figure*}
+
+
+% Finally, we examined how participants in both experiments rated the familiarity
+% of novel images. These ratings provide insights into how modulating the focus
+% of attention to \textit{prior} stimuli can affect the perception of
+% \textit{future} stimuli. We considered how participants rated novel stimuli
+% that matched versus did not match the category (face or scene) of the most
+% recent attention cue. Participants in the Sustained Attention Experiment rated
+% attended-category novel stimuli as more familiar than unattended-category novel
+% stimuli throughout the entire memory phase
+% (Fig.~\ref{fig:familiarity_timecourse_novel}a). By contrast, participants in
+% the Variable Attention Experiment rated attended-category and
+% unattended-category novel images similarly throughout the memory phase
+% (Fig.~\ref{fig:familiarity_timecourse_novel}b). The difference in familiarity
+% ratings between the two experiments primarily reflects that participants in the
+% Variable Attention Experiment rated unattended-category novel images as more
+% familiar than did participants in the Sustained Attention Experiment (e.g.,
+% compare blue lines in Fig.~\ref{fig:familiarity_timecourse_novel}a versus
+% \ref{fig:familiarity_timecourse_novel}b). This may indicate that the processing
+% of unattended-category novel stimuli is suppressed following sustained
+% attention (e.g., as opposed to enhancing the processing of attended-category
+% novel stimuli). The differences in familiarity between attended-category versus
+% unattended-category novel images increased slightly but reliably throughout the
+% memory phases of both experiments (Fig.~\ref{fig:familiarity_timecourse_novel},
+% bottom panels; slope of regression line fit to differences in Sustained
+% Attention Experiment: $\beta = 2.05 \times 10^{-3}, p = 1.07 \times 10^{-14} $;
+% slope of regression for Variable Attention Experiment: $\beta = 1.54 \times
+% 10^{-3}, p = 5.63 \times 10^{-13} $). This might reflect a process whereby the
+% suppression of unattended features continues to build for a short duration even
+% after the participant stops volitionally focusing on the attended features.
 
 
 \section*{Discussion}

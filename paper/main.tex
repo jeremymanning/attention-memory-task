@@ -411,6 +411,25 @@ with a memory phase, where participants performed a recognition memory task by
 rating the familiarity of previously experienced and novel face and place
 images (see \textit{Experimental paradigm}, Fig.~\ref{fig:paradigm}).
 
+\begin{figure*}[tp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/familiarity_by_attention_level}
+  
+  \caption{\textbf{Familiarity by attention level.} The bars display the
+  average familiarity ratings participants gave to images from the same
+  category and location as the attention cue (fully attended), the same
+  category (but opposite location) as the attention cue (attended category),
+  the same location (but opposite category) as the attention cue (attended
+  location), the opposite category and location as the attention cue
+  (unattended), or novel images. The left panel displays familiarity ratings
+  from the sustained attention condition and the right panel displays
+  familiarity ratings from the variable attention condition. All error bars
+  denote across-participant bootstrap-estimated 95\% confidence intervals. For results
+  sub-divided by stimulus category, see Figure~\ratingsByCategory.}
+  
+  \label{fig:familiarity}
+  \end{figure*}
+
 We first wondered whether (and how) shifts in covert attention might affect
 participants' ratings during the recognition memory task
 (Fig.~\ref{fig:familiarity}). To ensure that our findings were not conflated
@@ -529,10 +548,73 @@ images ($t(51) = -0.435, p = 0.665$) differently across the two conditions.
 However, participants in the variable attention condition rated
 attended-location (but unattended category) images as more familiar than
 participants in the sustained attention condition ($t(51) = 2.174, p = 0.034$).
-This suggests that location-based versus category-based attention may operate
+This suggests that category-based versus location-based attention may operate
 over different timescales.
 
+\begin{figure*}[tp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/encoding_and_retrieval_timecourses}
+  
+  \caption{\textbf{Familiarity ratings by serial positions and attention
+  level.} \textbf{A. Subsequent familiarity ratings by presentation position
+  (sustained attention condition).} The curves' colors denote the attention
+  levels of each presented image. The $x$-axis denotes the presentation
+  positions of each image within the sequence of 10 composite image pairs
+  during the run when it was presented. The $y$-axis denotes the average
+  familiarity ratings later given to the corresponding items. \textbf{B.
+  Subsequent familiarity ratings by presentation position (variable attention
+  condition).} This panel is in the same format as Panel A, but displays
+  ratings for the variable attention condition. \textbf{C. Familiarity ratings
+  by memory probe position (sustained attention condition).} The curve's colors
+  denote the attention levels (or novelty) of each probe image. The $x$-axis
+  denotes the position of each probed image within the sequence of 40 images
+  that participants judged during the memory phase of the experiemnt. The
+  $y$-axis denotes the average familiarity ratings given to the corresponding
+  probes. \textbf{D. Familiarity ratings by memory probe position (variable
+  attention condition).} This panel is in the same format as Panel C, but
+  displays ratings for the variable attention condition. All panels: error
+  ribbons denote across-participant bootstrap-estimated 95\% confidence
+  intervals.}
+  
+  \label{fig:timecourses}
+  \end{figure*}
+
+
+Given the above results suggesting potential differences in the timescales of
+category-based and location-based attention, we carried out two additional
+exploratory analyses aimed at identifying other timing effects. First, we
+wondered whether participants' familiarity ratings might show serial position
+effects analogous to those reported in classic recognition memory
+studies~\citep[e.g.,][]{Neat93b, McElDosh89, WickNorm66}. For each participant,
+for each composite image pair (presented in each trial during the study phase
+of the experiment), we labeled each composite's face and place image component
+according to whether it matched the cued category and/or location. We discarded
+any face or place images that did not appear in the participants' memory phase.
+We tagged the remaining (probed) images with the familiarity ratings that
+participants would later give the images during the memory phase and plotted
+these ratings against the images' presentation positions
+(Figs.~\ref{fig:timecourses}A and B). Across both experimental conditions and
+across all serial positions, we generally found that the average ordering of
+familiarity ratings by attention level (Fig.~\ref{fig:familiarity}) were
+preserved. This suggests that the encoding-related affects of attention on
+subsequent recognition memory are relatively stable over time (e.g., we did not
+observe clear primacy or recency effects during the study phase of the
+experiment). Second, we carried out an analogous analysis to identify potential
+serial position effects of recall order. For each probed item a participant
+rated during the memory phase, we assigned the image a label according to
+whether the participant's attention cue (at the time the image was presented as
+part of its composite pair) matched the image's category and/or location, or
+whether the image was novel (i.e., not presented during the study phase).
+Again, we found that (across both experimental conditions and all probe
+positions) in general the average ordering of familiarity ratings by attention
+level (Fig.~\ref{fig:familiarity}) were preserved. This suggests that the
+retrieval-related affects of attention on subsequent recognition memory are
+relatively stable over time (e.g., we did not observe clear primacy or recency
+effects during the memory phase of the experiment).
+
 \textbf{JRM STOPPED HERE}
+%note: discuss response bias analyses next (also add to supplement)
+
 
 % We considered each image we probed in the memory phase with respect to whether
 % (and how) the participant had experienced and/or attended to that image during
@@ -916,26 +998,26 @@ findings suggest that feature-based and location-based attention are mediated
 by different mechanisms and affect memory at different timescales
 (Fig.~\ref{fig:model}).
 
-\begin{figure*}[tp]
-  \centering \includegraphics[width=0.75\textwidth]{figures/discussion_schematic}
+% \begin{figure*}[tp]
+%   \centering \includegraphics[width=0.75\textwidth]{figures/discussion_schematic}
 
-  \caption{\textbf{Timecourse of encoding and retrieval effects of
-  feature-based and location-based attention.} The focus of location-based
-  attention (green) may be modulated quickly and rapidly enhances memory
-  encoding for nearby stimuli. The focus of feature-based attention (purple) is
-  modulated more slowly, and serves to suppress unattended stimulus features.
-  The effects of location-based attention on memory persist for longer than the
-  effects of feature-based attention. Sustained attention (darker shading)
-  yields more robust enhancement and suppression than shorter-term (variable)
-  attention (light shading). The vertical gray line on the left denotes the
-  duration of a single stimulus presentation (the upper bound by which
-  location-based attention begins to affect encoding, and the lower-bound by
-  which feature-based attention begins to affect encoding). The vertical gray
-  line on the right separates encoding from immediate subsequent retrieval of
-  the encoded information.}
+%   \caption{\textbf{Timecourse of encoding and retrieval effects of
+%   feature-based and location-based attention.} The focus of location-based
+%   attention (green) may be modulated quickly and rapidly enhances memory
+%   encoding for nearby stimuli. The focus of feature-based attention (purple) is
+%   modulated more slowly, and serves to suppress unattended stimulus features.
+%   The effects of location-based attention on memory persist for longer than the
+%   effects of feature-based attention. Sustained attention (darker shading)
+%   yields more robust enhancement and suppression than shorter-term (variable)
+%   attention (light shading). The vertical gray line on the left denotes the
+%   duration of a single stimulus presentation (the upper bound by which
+%   location-based attention begins to affect encoding, and the lower-bound by
+%   which feature-based attention begins to affect encoding). The vertical gray
+%   line on the right separates encoding from immediate subsequent retrieval of
+%   the encoded information.}
 
-\label{fig:model}
-\end{figure*}
+% \label{fig:model}
+% \end{figure*}
 
 The notion that location-based attention operates at a faster timescale than
 feature-based attention is supported by prior work on the deployment of visual

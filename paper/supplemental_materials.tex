@@ -24,11 +24,10 @@ $^2$Princeton University\\
 \textsuperscript{$\dagger$}Address correspondence to jeremy.r.manning@dartmouth.edu}
 
 
-%\begin{titlepage}
-  \maketitle
-%\end{titlepage}
+\maketitle
 
-  \renewcommand{\thefigure}{S\arabic{figure}}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
 
 
   \begin{figure*}[tp]
@@ -67,9 +66,6 @@ proportions of presentations across different runs where the given
 pariticapants looked at any part of the attended composite image, for any
 non-zero duration. Error bars denote across-run bootstrap-estimated 95\%
 confidence intervals.}
-  
-  \label{fig:intersections}
-  \end{figure*}
 
   \label{fig:gaze-histograms}
 \end{figure*}
@@ -96,6 +92,63 @@ the main text.}
 \end{figure*}
 
 
+\begin{figure*}[tp]
+  \centering
+  \includegraphics[width=1\textwidth]{figs/sequence_length_effects}
+
+\caption{\textbf{Effects of attention cue sequence length on familiarity.} 
+\textbf{A. Sequence effects (sustained attention condition).} Each heatmap
+displays the proportions of images that participants rated at each familiarity
+rating (rows), broken down by the number of successive matching attention cues
+the participant received at the time the given image was presented as part of a
+composite pair (up to and including the image's composite pair; columns). The
+trend lines (with bootstrap-estimated 95\% confidence intervals) show
+regressions fit to the corresponding heatmap's data ($x$: sequence length; $y$:
+familiarity rating). Heatmaps are organized into rows based on how the sequence
+lengths were computed (top row: successive attention cues had the same category
+and location; middle row: successive attention cues had the same category;
+bottom row: successive attention cues had the same location). Columns (and
+colors) denote attention levels (as in Figs.~\familiarity~and
+\ref{fig:ratings-by-category}). \textbf{B. Sequence effects (variable attention
+condition).} This Panel is in the same format as Panel A, but displays results
+from the variable attention condition.}
+
+\label{fig:sequence-effects}
+\end{figure*}
+
+\begin{figure*}[tp]
+  \centering
+  \includegraphics[width=1\textwidth]{figs/response_bias.pdf}
+
+\caption{\textbf{Response bias analyses.} \textbf{A. Sustained attention
+condition.} The bars display the mean familiarity ratings participants gave to
+novel memory probes (lures) that matched (``True'') versus did not match
+(``False'') the prior run's attention-cued category. Error bars denote
+across-participant bootstrap-estimated 95\% confidence intervals. \textbf{B.
+Variable attention condition.} Each heatmap displays the proportions of images
+that participants rated at each familiarity rating (rows), broken down by
+metrics related to recent same-category attention cues participants received on
+the prior run (columns). The trend lines (with bootstrap-estimated 95\%
+confidence intervals) show regressions fit to the corresponding heatmap's data
+($x$: metrics related to same-category cues; $y$: familiarity rating). The top
+panels's columns reflect the temporal distances to the most recent
+same-category attention cues, measured in numbers of presented items (where 1
+denotes the final item on the most recent run). The bottom panel's columns
+denote the recency-weighted average numbers of same-category cues presented on
+the most recent run. Each column of matrices corresponds to a different
+attention level, as in Figures~\familiarity~and \ref{fig:ratings-by-category}.
+\textbf{C. Weights by recency.} The panel displays the weights used to compute
+recency-weighted numbers of same-category cues on the most recent run. The
+$x$-axis displays the presentation positions of each attention cue, and the
+$y$-axis displays the weight assigned to same-category cues at the given
+presentation position. The weights are first computed using $w = \max\left[1 -
+\exp\{-\frac{x}{\tau}\} , \epsilon \right]$, where $\tau = 2$, $\epsilon =
+0.05$, and $x$ is the cue's presentation position. To obtain the $y$-values
+shown in the Panel (and used in Panel B), the weights for $x \in \left[0, 1, 2,
+..., 9\right]$ are normalized to sum to 1.}
+
+\label{fig:response-bias}
+\end{figure*}
 
 
 

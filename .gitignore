@@ -6,6 +6,8 @@ paper/*.fdb_latexmk
 paper/*.synctex.gz
 paper/*.fls
 paper/*.out
+paper/*.bbl
+paper/*.blg
 
 __pycache__/*
 *.pyc

@@ -191,9 +191,9 @@ def parse_gaze_data(datadir):
 
 
 def intersect_image(xs, ys):
-    im_len = 59.8 / 2 - 9
+    im_len = 6.7 * (52.96 / 59.8)
     y = (33.6 - im_len) / 2
-    x1 = 4.5
+    x1 = (59.8 / 2) - 4.5 - im_len
     x2 = (59.8 / 2) + 4.5
 
     xs = np.array(xs)

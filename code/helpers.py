@@ -46,8 +46,7 @@ def download_data():
 
     if os.path.exists(data_fname) and not os.path.exists(checkfile_fname):
         print('Unzipping data...')
-        shutil.unpack_archive(data_fname, basedir)        
-        shutil.rmtree(os.path.join(basedir, '__MACOSX'))
+        shutil.unpack_archive(data_fname, datadir)
         os.remove(data_fname)
 
         with open(checkfile_fname, 'w') as f:

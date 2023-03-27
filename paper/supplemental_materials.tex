@@ -37,7 +37,7 @@ $^2$Princeton University\\
  \caption{\textbf{Gaze location histograms.} We divided the experimental
  display into 120 horizontal bins and 78 vertical bins, each comprising a
  roughly 0.5~cm square. The panels display the average proportions of time
- (throughout the duration of the experiment) participants spend looking at each
+ (throughout the duration of the experiment) participants spent looking at each
  location. The left panel displays data from participants in the sustained
  attention condition and the right panel displays data from participants in the
  variable attention condition. In both panels, the locations of the central
@@ -55,19 +55,19 @@ $^2$Princeton University\\
 any images from trials where the participant's gaze touched on any part of the
 attended composite image (attended-side red squares in
 Fig.~\ref{fig:gaze-histograms}). \textbf{A--B. Proportions of excluded trials,
-by run.} Across both experimental conditions (left: sustained attention; right:
-variable attention), the bars display the average proportions of presentations
-from each run where participants looked at any part of the attended composite
-image, for any non-zero duration. Error bars denote across-participant
-bootstrap-estimated 95\% confidence intervals. \textbf{C--D. Proportions of
-excluded trials, by participant.} Across both experimental conditions (left:
-sustained attention; right: variable attention), the bars display the average
-proportions of presentations across different runs where the given
-participants looked at any part of the attended composite image, for any
-non-zero duration. Error bars denote across-run bootstrap-estimated 95\%
+by trial block.} Across both experimental conditions (left: sustained
+attention; right: variable attention), the bars display the average proportions
+of presentations from each trial block where participants looked at any part of the
+attended composite image, for any non-zero duration. Error bars denote
+across-participant bootstrap-estimated 95\% confidence intervals. \textbf{C--D.
+Proportions of excluded trials, by participant.} Across both experimental
+conditions (left: sustained attention; right: variable attention), the bars
+display the average proportions of presentations across different runs where
+the given participants looked at any part of the attended composite image, for
+any non-zero duration. Error bars denote across-block bootstrap-estimated 95\%
 confidence intervals.}
 
-  \label{fig:gaze-histograms}
+  \label{fig:gaze-intersections}
 \end{figure*}
 
 \begin{figure*}[tp]
@@ -97,7 +97,7 @@ the main text.}
   \includegraphics[width=1\textwidth]{figs/sequence_length_effects}
 
 \caption{\textbf{Effects of attention cue sequence length on familiarity.} 
-\textbf{A. Sequence effects (sustained attention condition).} Each heat map
+\textbf{A. Sustained attention condition.} Each heat map
 displays the proportions of images that participants rated at each familiarity
 rating (rows), broken down by the number of successive matching attention cues
 the participant received at the time the given image was presented as part of a
@@ -109,8 +109,8 @@ lengths were computed (top row: successive attention cues had the same category
 and location; middle row: successive attention cues had the same category;
 bottom row: successive attention cues had the same location). Columns (and
 colors) denote attention levels (as in Figs.~\familiarity~and
-\ref{fig:ratings-by-category}). \textbf{B. Sequence effects (variable attention
-condition).} This Panel is in the same format as Panel A, but displays results
+\ref{fig:ratings-by-category}). \textbf{B. Variable attention
+condition.} This panel is in the same format as Panel A, but displays results
 from the variable attention condition.}
 
 \label{fig:sequence-effects}
@@ -144,7 +144,7 @@ $y$-axis displays the weight assigned to same-category cues at the given
 presentation position. The weights are first computed using $w = \max\left[1 -
 \exp\{-\frac{x}{\tau}\} , \epsilon \right]$, where $\tau = 2$, $\epsilon =
 0.05$, and $x$ is the cue's presentation position. To obtain the $y$-values
-shown in the Panel (and used in Panel B), the weights for $x \in \left[0, 1, 2,
+shown in the panel (and used in Panel B), the weights for $x \in \left[0, 1, 2,
 ..., 9\right]$ are normalized to sum to 1.}
 
 \label{fig:response-bias}

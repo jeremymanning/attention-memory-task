@@ -29,7 +29,7 @@ Note: we have tested these instructions on MacOS and Ubuntu (Linux) systems.  We
 
 We recommend running all of the analyses in a fresh Python 3.10 conda environment.  To set up your environment:
   1. Install [Anaconda](https://www.anaconda.com/)
-  2. Clone this repository by running the following in a terminal: `git clone https://github.com/ContextLab/attention-memory-task`  
+  2. Clone this repository by running the following in a terminal: `git clone https://github.com/ContextLab/attention-memory-task` and change the working directory to the newly cloned repository (e.g., `cd attention-memory-task`)
   3. Create a new (empty) virtual environment by running the following (in the terminal): `conda create --name attention-memory python=3.10` (follow the prompts)
   4. Navigate (in terminal) to the activate the virtual environment (`conda activate attention-memory`)
   5. Install support for jupyter notebooks (`conda install -c anaconda ipykernel jupyter`) and then add the new kernel to your notebooks (`python -m ipykernel install --user --name=attention-memory`).  Follow any prompts that come up (accepting the default options should work).

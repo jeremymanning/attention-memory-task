@@ -1,4 +1,6 @@
 import os
+import shutil
+import time
 import requests
 import pandas as pd
 import numpy as np
@@ -9,6 +11,7 @@ from matplotlib import pyplot as plt
 
 from tqdm import tqdm
 from glob import glob as lsdir
+from datetime import datetime
 
 basedir = os.path.split(os.getcwd())[0]
 datadir = os.path.join(basedir, 'data')
@@ -32,7 +35,7 @@ attention_colors = {
 
 
 def download_data():
-    data_url = 'https://www.dropbox.com/s/99ty0ok8p4m5ijc/data.zip?dl=1'
+    data_url = 'https://www.dropbox.com/s/6w8iemlqjyubn05/data.zip?dl=1'
     data_fname = os.path.join(basedir, 'data.zip')
     checkfile_fname = os.path.join(datadir, 'checkfile.txt')
 
@@ -43,9 +46,9 @@ def download_data():
 
     if os.path.exists(data_fname) and not os.path.exists(checkfile_fname):
         print('Unzipping data...')
-        os.system(f'unzip -q {data_fname} -d {basedir}')
-        os.system(f'rm {data_fname}')
-        os.system(f'rm -rf {basedir}/__MACOSX')
+        shutil.unpack_archive(data_fname, basedir)        
+        shutil.rmtree(os.path.join(basedir, '__MACOSX'))
+        os.remove(data_fname)
 
         with open(checkfile_fname, 'w') as f:
             f.write('download complete.')
@@ -144,7 +147,7 @@ def parse_gaze_data(datadir):
              'y': ['values', 'frame', 'avg', 'y'],
             'Pupil size': [['values', 'frame', 'lefteye', 'psize'], ['values', 'frame', 'righteye', 'psize']]}
 
-    str2unix = lambda t: time.mktime(datetime.strptime(t, '%Y-%m-%d %H:%M:%S.%f').timetuple())
+    str2unix = lambda t: time.mktime(datetime.strptime(t, '%Y-%m-%d %H:%M:%S.%f').timetuple()) if type(t) is str else -1
     
     def helper(subjdir):
         subj = os.path.basename(subjdir)

@@ -16,3 +16,9 @@ code/.ipynb_checkpoints/*
 
 experiment/stimuli
 experiment/__MACOSX
+paper/admin/cover_letter.aux
+paper/admin/cover_letter.fdb_latexmk
+paper/admin/cover_letter.fls
+paper/admin/cover_letter.log
+paper/admin/cover_letter.out
+paper/admin/cover_letter.synctex.gz
